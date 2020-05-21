@@ -1,0 +1,152 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Raleway, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    margin-top: 40px;
+    max-width: 20%;
+    padding-left: 5%;
+}
+
+nav{
+    margin-top: -20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    padding: 0 5% 0 5%;
+}
+.nav_item{
+    margin-left: 1.5%;
+    color: #DA945B;
+    padding-left: 5px;
+    padding-right: 5px; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+.nav_item_active{
+    margin-left: 1.5%;
+    color: #DA945B;
+    padding-left: 5px;
+    padding-right: 5px; 
+    border-left: 2px solid #C89C7A;
+    border-right: 2px solid #C89C7A;
+}
+.nav_item:hover{
+    border-left: 2px solid #C89C7A;
+    border-right: 2px solid #C89C7A;
+    transition: .5s;
+}
+.sun{
+    width: 50vw;
+    height: 50vw;
+    background-color: #DA945B;
+    border-radius: 50%;
+    margin: auto;
+    border: 50px solid white;
+    margin-top: -50px;
+}
+.specoff{
+    background-color: #C89C7A;
+    height: 700px;
+    margin-top: -100px;
+    z-index: -1;
+    position: relative;
+}
+.specoff_title{
+    text-align: center;
+    position: relative;
+    top: 10vw;
+    font-size: 50px;
+    color: white;
+}
+/*Carousel elements styling starts here */
+.carousel_slide{
+    background-color: #FFFBF0;
+    border-radius: 15px;
+    width: 250px;
+    height: 350px;
+    position: relative;
+    overflow: auto;
+}
+.heart{
+    float: right;
+    margin: 10px;
+}
+.product_image{
+    display: block;
+    margin: 0 auto 0 auto;
+    border-radius: 15px;
+    clear: both;
+    position: relative;
+    bottom: 7%;
+}
+.discount_box{
+    background-color: #FF0C2E;
+    width: 70px;
+    height: 90px;
+    float: right;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    right: 10%;
+    bottom: 33%;
+}
+p2{
+    font-size: 24px;
+}
+p3{
+    text-decoration: line-through;
+}
+h3{
+    text-align: center;
+    margin: auto;
+}
+.addtocart{
+    position: absolute;
+    bottom: 2%;
+    text-align: center;
+    clear: both;
+    width: 95%;
+    margin-left: 2.5%;
+    border: solid 3px #DA945B;
+    border-radius: 15px;
+    height: 40px;
+    line-height: 34px;
+    font-size: 20px;
+}
+/*Carousel elements styling ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
