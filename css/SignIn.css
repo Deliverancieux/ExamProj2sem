@@ -43,62 +43,71 @@ nav {
     color: #DA945B;
     padding-left: 5px;
     padding-right: 5px;
-    border-left: 3px solid #3D5867;
-    border-right: 3px solid #3D5867;
+    border-left: 2px solid #3D5867;
+    border-right: 2px solid #3D5867;
 }
 
 .nav_item:hover {
-    border-left: 3px solid #C89C7A;
-    border-right: 3px solid #C89C7A;
+    border-left: 2px solid #C89C7A;
+    border-right: 2px solid #C89C7A;
     transition: .5s;
 }
 
-< !-- The main part starts -- > .login_pic {
-    text-align: center;
+/* The main part starts */
+.login_container{
+    margin-top: 50px;
+}
+.login_image {
+    display: block;
     margin: auto;
-
+    width: 5vw;
 }
 
 .login_title {
     text-align: center;
-    position: relative;
-    top: 10vw;
     font-size: 40px;
     color: #DA945B;
 }
 
 .login_type {
     background-color: #6593AE;
-    width: 515px;
-    height: 288px;
-    position: relative;
     overflow: auto;
-
-
+    margin: auto;
+    width: 35vw;
+    padding: 25px 25px 35px 25px;
 }
 
 .login_box {
-    font-size: 18;
     color: #FFFFFF;
     position: relative;
     font-family: Raleway, sans-serif;
-    padding-left: 40px;
+    padding-left: 30px;
+    margin-bottom: 10px;
 }
 
 input[type=text] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 0 0 12px 25px;
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 4px solid #FFFFFF;
     font-family: Raleway, sans-serif;
     color: white;
     background-color: #6593AE;
     outline: none;
-    font-size: 18;
+    font-size: 18px;
 }
 .LogIn_button {
-    color: #DA945B;
+    color: white;
+    margin: 25px auto;
+    display: block;
+    width: 25vw;
+    height: 3vw;
+    background-color: #DA945B;
+    border-radius: 15px;
+    border: none;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
     
 }
