@@ -6,7 +6,7 @@
     <title>EuroDeli</title>
     <meta name="description" content="EuroDeli, a shop of imported European products.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/SignIn.css">
+    <link rel="stylesheet" href="../css/SignUp.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -32,9 +32,16 @@
             <a href="../subpages/favourites.html" class="nav_item">
                 <img src="../files/favourites.svg" alt="Favourites">
             </a>
-            <a href="../subpages/SignIn.html" class="nav_item_active">
-                <img src="../files/profile.svg" alt="Profile">
-            </a>
+            <div class="dropdown">
+                <button class="nav_item"> <img src="../files/profile.svg" alt="drop"></button>
+                <div class="dropdown-content">
+                    <h1 class="welcome">Hi, Zsofi!</h1>
+                    <a href="profile.html">My Account</a>
+                    <a href="../subpages/myorders.html">My Orders</a>
+                    <a href="../subpages/discount.html">My Discount card</a>
+                    <a href="../subpages/SignIn.html" style="color:#6593AE; font-weight:500; text-align: center;">Sign Out</a>
+                </div>
+            </div>
             <a href="../subpages/cart.html" class="nav_item">
                 <img src="../files/cart.svg" alt="Cart">
             </a>
@@ -45,26 +52,38 @@
         <h1 class="login_title">LOG IN</h1>
     </div>
     <section class="login_type">
+        <h2 class="login_box">Name</h2>
+        <form method="post" action="">
+            <p><input name="textfield" type="text" value=""></p>
+        </form>
+        <h2 class="login_box">Last name</h2>
+        <form method="post" action="">
+            <p><input name="textfield" type="text" value=""></p>
+        </form>
+        <form>
+            <div>
+                <h2 class="login_box">Date of birth </h2>
+                <input type="date" id="party" name="party">
+            </div>
+        </form>
+        <h2 class="login_box">Phone number</h2>
+        <form method="post" action="">
+            <p><input name="textfield" type="text" value=""></p>
+        </form>
         <h2 class="login_box">E-mail</h2>
         <form method="post" action="">
             <p><input name="textfield" type="text" value=""></p>
+        </form>
+        <form method="post" action="">
             <h2 class="login_box">Password</h2>
         </form>
         <input type="password" value="" id="myInput"><br><br>
-        <input type="checkbox" onclick="myFunction()">Show Password
-
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myInput");
-                if (x.type === "password") {
-                    x.type = "text";
-                } else {
-                    x.type = "password";
-                }
-            }
-        </script>
+        <form method="post" action="">
+            <h2 class="login_box">Confirm password</h2>
+        </form>
+        <input type="password" value="" id="myInput"><br><br>
     </section>
-    <a href="profile.html" class="LogIn_button">Log In</a>
-    <a href="subpages/signup.html" class="SignUp_button">Sign up</a>
+    <a href="profile.html" class="SignUp_button">Save & Log In</a>
+    <a href="SignIn.html" class="LogIn_button">I alredy have an account</a>
 
 </body></html>
