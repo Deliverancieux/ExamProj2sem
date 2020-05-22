@@ -109,5 +109,7 @@ input[type=text] {
     border: none;
     font-family: Raleway, sans-serif;
     font-size: 20px;
+    text-align: center;
+    line-height: 3vw;
     
 }
