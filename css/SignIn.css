@@ -53,10 +53,52 @@ nav {
     transition: .5s;
 }
 
-< !-- The main part starts -- > 
-.login_image {
+< !-- The main part starts -- > .login_pic {
     text-align: center;
     margin: auto;
-    
+
 }
 
+.login_title {
+    text-align: center;
+    position: relative;
+    top: 10vw;
+    font-size: 40px;
+    color: #DA945B;
+}
+
+.login_type {
+    background-color: #6593AE;
+    width: 515px;
+    height: 288px;
+    position: relative;
+    overflow: auto;
+
+
+}
+
+.login_box {
+    font-size: 18;
+    color: #FFFFFF;
+    position: relative;
+    font-family: Raleway, sans-serif;
+    padding-left: 40px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    font-family: Raleway, sans-serif;
+    color: white;
+    background-color: #6593AE;
+    outline: none;
+    font-size: 18;
+}
+.LogIn_button {
+    color: #DA945B;
+    
+}
