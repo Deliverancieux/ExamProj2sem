@@ -76,7 +76,8 @@ nav {
     overflow: auto;
     margin: auto;
     width: 35vw;
-    padding: 25px 25px 65px 25px;
+    padding: 25px 25px 35px 25px;
+    margin: 55px auto 35px auto;
 }
 
 .login_box {
@@ -152,9 +153,6 @@ input {
     font-size: 20px
 }
 
-checkbox {
-    color: white;
-}
 
 .welcome {
     color: #6593AE;
