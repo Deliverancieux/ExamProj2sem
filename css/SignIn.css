@@ -45,6 +45,7 @@ nav {
     padding-right: 5px;
     border-left: 2px solid #3D5867;
     border-right: 2px solid #3D5867;
+    background-color: white;
 }
 
 .nav_item:hover {
@@ -76,6 +77,7 @@ nav {
     margin: auto;
     width: 35vw;
     padding: 25px 25px 65px 25px;
+    margin: 55px auto 35px auto;
 }
 
 .login_box {
@@ -154,4 +156,61 @@ input {
 
 checkbox {
     color: white;
+}
+.welcome {
+    color: #DA945B;
+    font-size: 19px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-weight: 500;
+    border-bottom: 2px solid maroon;
+    padding-bottom: 5px;
+    border-bottom-color: #6593AE;
+    border-bottom-width: thin;
+}
+
+.dropdown {
+    margin-left: 1.5%;
+    color: #DA945B;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.dropdown_active {
+    margin-left: 1.5%;
+    color: #DA945B;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 2px solid #3D5867;
+    border-right: 2px solid #3D5867;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #DA945B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content-signout {
+    color: aliceblue;
 }
