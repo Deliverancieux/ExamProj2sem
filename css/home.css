@@ -9,6 +9,10 @@
 
 body{
     font-family: Raleway, sans-serif;
+    background-color:  #C89C7A;
+}
+header{
+    background-color: white;
 }
 
 a{
@@ -49,21 +53,18 @@ nav{
     border-right: 2px solid #C89C7A;
     transition: .5s;
 }
+.sun_container{
+    background-color: white;
+    height: 42vw;
+}
 .sun{
     width: 50vw;
     height: 50vw;
     background-color: #DA945B;
     border-radius: 50%;
     margin: auto;
-    border: 50px solid white;
+    border: 4vw solid white;
     margin-top: -50px;
-}
-.specoff{
-    background-color: #C89C7A;
-    height: 700px;
-    margin-top: -100px;
-    z-index: -1;
-    position: relative;
 }
 .specoff_title{
     text-align: center;
@@ -73,14 +74,17 @@ nav{
     color: white;
 }
 /*Carousel elements styling starts here */
+.carousel_slide_container{
+    margin: 10px 0 10px 0;
+}
 .carousel_slide{
     background-color: #FFFBF0;
     border-radius: 15px;
     width: 250px;
     height: 350px;
     position: relative;
-    overflow: auto;
 }
+
 .heart{
     float: right;
     margin: 10px;
@@ -131,7 +135,10 @@ h3{
 }
 /*Carousel elements styling ends here */
 
-
+.carousel_container{
+    width: 90%;
+    margin: 200px auto;
+}
 
 
 
