@@ -251,9 +251,33 @@ h3{
     width: 87%;
     margin: 200px auto;
 }
-
-
-
+.didyouknow_container{
+    background-color: white;
+    text-align: center;
+    margin-top: -5;
+}
+.didyouknow{
+    font-weight: normal;
+    font-size: 4vw;
+    color: #6593AE;
+}
+.wedeliver{
+    font-size: 6vw;
+    color: #C9A78C;
+}
+.ordernow_button{
+    width: 20vw;
+    height: 3vw;
+    margin: auto;
+    text-align: center;
+    background-color: #C9A78C;
+    color: white;
+    border-radius: 3vw;
+    font-size: 2vw;
+    font-weight: bold;
+    display: block;
+    line-height: 3vw;
+}
 
 
 
