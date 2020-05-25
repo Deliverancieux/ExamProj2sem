@@ -19,7 +19,9 @@ $(document).ready(function(){
       rows: 2,
       slidesPerRow: 3,
           centerMode:true,
-          accessibility: false,
+          arrows: false,
+          autoplay: true,
+          infinite: true,
       }
     },
     {
@@ -29,7 +31,9 @@ $(document).ready(function(){
       rows: 2,
       slidesPerRow: 2,
           centerMode: true,
-          accessibility: false,
+          arrows: false,
+          autoplay: true,
+          infinite: true,
       }
     }
     ]
