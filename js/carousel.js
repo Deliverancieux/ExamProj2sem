@@ -13,7 +13,7 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 800,
+      breakpoint: 900,
       settings: {
       infinite: false,
       rows: 2,
