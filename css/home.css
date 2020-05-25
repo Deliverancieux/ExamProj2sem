@@ -75,7 +75,7 @@ nav{
 }
 /*Carousel elements styling starts here */
 .carousel_slide_container{
-    margin: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
 }
 .carousel_slide{
     background-color: #FFFBF0;
@@ -133,10 +133,55 @@ h3{
     line-height: 34px;
     font-size: 20px;
 }
+
+
+@media (-webkit-device-pixel-ratio: 1) {
+.carousel_slide{
+    width: 300px;
+    height: 420px;
+}
+.product_image{
+    width: 200px;
+    
+}
+.discount_box{
+    bottom: 30%;
+}
+}
+@media (-webkit-device-pixel-ratio: 1.5) {
+        
+.carousel_slide{
+    width: 200px;
+    height: 300px;
+}
+.product_image{
+    max-width: 100px;
+    
+}
+.discount_box{
+    bottom: 30%;
+    width: 50px;
+    height: 70px;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    right: 10%;
+    bottom: 42%;
+}
+    h2{
+        font-size: 20px;
+    }
+    p2{
+        font-size: 15px;
+    }
+    p3{
+        font-size: 15px;
+    }
+}
 /*Carousel elements styling ends here */
 
 .carousel_container{
-    width: 90%;
+    width: 87%;
     margin: 200px auto;
 }
 
