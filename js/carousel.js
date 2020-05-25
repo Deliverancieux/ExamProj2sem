@@ -17,8 +17,9 @@ $(document).ready(function(){
       settings: {
       infinite: false,
       rows: 2,
-      slidesPerRow: 2,
+      slidesPerRow: 3,
           centerMode:true,
+          accessibility: false,
       }
     },
     {
@@ -26,8 +27,9 @@ $(document).ready(function(){
       settings: {
       infinite: false,
       rows: 2,
-      slidesPerRow: 1,
+      slidesPerRow: 2,
           centerMode: true,
+          accessibility: false,
       }
     }
     ]

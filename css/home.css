@@ -215,6 +215,36 @@ h3{
         line-height: 24px;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .carousel_slide{
+        width: 130px;
+        height: 250px;
+    }
+    
+    h2{
+        font-size: 17px;
+    }
+    p2{
+        font-size: 13px;
+    }
+    p3{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 13px;
+    }
+    .addtocart{
+        font-size: 14px;
+        height: 27px;
+        line-height: 21px;
+    }
+    .discount_box{
+        bottom: 33%;
+    }
+}
+
+
 /*Carousel elements styling ends here */
 
 .carousel_container{
@@ -223,7 +253,8 @@ h3{
 }
 @media only screen and (max-width: 768px) {
     .carousel_container{
-        width: 70%;
+        width: 100%;
+        margin: 100px auto;
     }
 }
 
