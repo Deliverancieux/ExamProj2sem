@@ -151,7 +151,7 @@ input {
     color: white;
     background-color: #6593AE;
     outline: none;
-    font-size: 20px
+    font-size: 20px;
 }
 
 
@@ -161,7 +161,7 @@ input {
     padding-left: 15px;
     padding-top: 10px;
     font-weight: 500;
-    border-bottom: 2px solid maroon;
+    border-bottom: 2px solid;
     padding-bottom: 5px;
     border-bottom-color: #6593AE;
     border-bottom-width: thin;
@@ -209,6 +209,5 @@ input {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.dropdown-content-signout {
-    color: aliceblue;
-}
+
+
