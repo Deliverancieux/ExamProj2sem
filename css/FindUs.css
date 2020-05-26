@@ -146,5 +146,27 @@ input {
     font-size: 18px;
     margin-bottom: 12px;
     margin-top: 60px;
-    
+}
+.container {
+    position: relative;
+    padding: 0 18px;
+    max-width: 1280px;
+    margin-right: auto;
+    width: calc(50% - 48px);
+    float: left;
+    margin-left: 32px;
+}
+.shop {
+    background-color: #fff;
+    margin-bottom: 16px;
+    position: relative;
+    padding: 16px 16px 26px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 100px;
+}
+.shop_detail {
+    color: #7e898c;
+    font-family: Neris-Light,sans-serif;
+    font-weight: 400;
 }
