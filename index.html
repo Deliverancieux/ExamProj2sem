@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script type="text/javascript" src="slick/slick.min.js" defer></script>
     <script type="text/javascript" src="js/carousel.js" defer></script>
+    <script type="text/javascript" src="js/burgermenu.js" defer></script>
     <script type="text/javascript" src="/js/cart.js" defer></script>
 </head>
     
@@ -22,27 +23,39 @@
     <a href="index.html">
         <img src="files/logo.png" alt="EuroDeli logo" class="logo">
     </a>
-    <nav>
-        <a href="index.html" class="nav_item_active"> Home
-        </a>
-        <a href="subpages/products.html" class="nav_item"> Products
-        </a>
-        <a href="subpages/findus.html" class="nav_item"> Find Us
-        </a>
-        <a href="subpages/faq.html" class="nav_item"> FAQ
-        </a>
-        <a href="subpages/favourites.html" class="nav_item"> 
-            <img src="files/favourites.svg" alt="Favourites">
-        </a>
-        <a href="subpages/SignIn.html" class="nav_item"> 
-            <img src="files/profile.svg" alt="Profile">
-        </a>
-        <a href="subpages/cart.html" class="nav_item">
-            <img src="files/cart.svg" alt="Cart">
+    <nav id="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay_content">
+            <a href="index.html" class="nav_item active"> Home
+            </a>
+            <hr>
+            <a href="subpages/products.html" class="nav_item"> Products
+            </a>
+            <hr>
+            <a href="subpages/findus.html" class="nav_item"> Find&nbsp;Us
+            </a>
+            <hr>
+            <a href="subpages/faq.html" class="nav_item"> FAQ
+            </a>
+            <hr>
+            <a href="subpages/favourites.html" class="nav_item"> 
+                <img src="files/favourites.svg" alt="Favourites">
+            </a>
+            <hr>
+            <a href="subpages/SignIn.html" class="nav_item"> 
+                <img src="files/profile.svg" alt="Profile">
+            </a>
+            <hr>
+            <a href="subpages/cart.html" class="nav_item">
+                <img src="files/cart.svg" alt="Cart">
+            </a>
+            <!--
+            <div class="circle"></div>
+            -->
+        </div>
             <span>0</span>
-        </a>
-        
     </nav>
+        <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><img src="files/burger_menu.svg" alt="Open buger menu" class="openbtn_img"></a>
     </header>
 	<main>
         <div class="sun_container">
@@ -283,9 +296,9 @@
         <a href="subpages/products.html" class="ordernow_button">ORDER NOW</a>
         </div>
         <div class="flex_img_container">
-        <img src="files/eurodeli.svg" alt="EuroDeli" class="eurodeli">
-        <img src="files/truck.svg" alt="truck" class="truck">
-        <img src="files/home_heart.svg" alt="home" class="home">
+        <img src="files/eurodeli.svg" alt="EuroDeli" class="eurodeli flex_img">
+        <img src="files/truck.svg" alt="truck" class="truck flex_img">
+        <img src="files/home_heart.svg" alt="home" class="home flex_img">
         </div>
         <div class="road"></div>
         

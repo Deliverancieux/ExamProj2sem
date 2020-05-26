@@ -18,7 +18,137 @@ header{
 a{
     text-decoration: none;
 }
+/* header styling starts here */
+.logo{
+    margin: 0 auto 50px auto;
+    padding-top: 10px;
+    height: 35px;
+    display: block;
+}
+nav{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
 
+.overlay_content{
+    position: relative;
+    top: 15%;
+    width: 30%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.openbtn{
+    float: right;
+    margin-right:20px;
+    color: #C89C7A;
+    height: 30px;
+    position: relative;
+    bottom: 70px;
+}
+.openbtn_img{
+    height: 25px;
+}
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #C89C7A;
+}
+.nav_item{
+    color: #DA945B;
+    padding-left: 5px;
+    padding-right: 5px; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.active{
+    border-left: 2px solid #C89C7A;
+    border-right: 2px solid #C89C7A;
+
+}
+.nav_item:hover{
+    border-left: 2px solid #C89C7A;
+    border-right: 2px solid #C89C7A;
+    transition: .5s;
+}
+hr{
+    position: relative;
+    left: -25%;
+    width: 150%;
+    background-color: #DA945B;
+    height: 2px;
+}
+/*
+.circle{
+    background-color: #6593AE;
+    border-radius: 50%;
+    width: 80vw;
+    height: 80vw;
+    position: absolute;
+    left: -200%;
+}
+*/
+@media only screen and (min-width: 768px) {
+    .logo{
+        margin: 0;
+        max-width: 20%;
+        height: initial;
+        padding: 40px 0 0 5%;
+        position: relative;
+        z-index: 1;
+    }
+    .openbtn{
+        display: none;
+    }
+    .closebtn{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    nav{
+        height: initial;
+        width: initial;
+        position: initial;
+        float: right;
+        display: initial;
+        margin-top: -30px;
+        
+    }
+    .overlay_content{
+        text-align: center;
+        font-size: 20px;
+        padding: 0 5% 0 5%;
+        display: flex;
+        justify-content: flex-end;
+        width: initial;
+        height: initial;
+    }
+    .nav_item{
+        margin-left: 20px;
+        width: inherit;
+        display: inline-block;
+    }
+    
+}
+
+/*
+
+ --- old desktop first settings ---
 .logo{
     margin-top: 40px;
     max-width: 20%;
@@ -32,27 +162,9 @@ nav{
     font-size: 20px;
     padding: 0 5% 0 5%;
 }
-.nav_item{
-    margin-left: 1.5%;
-    color: #DA945B;
-    padding-left: 5px;
-    padding-right: 5px; 
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-}
-.nav_item_active{
-    margin-left: 1.5%;
-    color: #DA945B;
-    padding-left: 5px;
-    padding-right: 5px; 
-    border-left: 2px solid #C89C7A;
-    border-right: 2px solid #C89C7A;
-}
-.nav_item:hover{
-    border-left: 2px solid #C89C7A;
-    border-right: 2px solid #C89C7A;
-    transition: .5s;
-}
+*/
+
+/* header styling ends here */
 .sun_container{
     background-color: white;
     height: 42vw;
@@ -73,7 +185,7 @@ nav{
     font-size: 50px;
     color: white;
 }
-/*Carousel elements styling starts here */
+/*Carousel styling starts here */
 .carousel_slide_container{
     margin: 5px 0 5px 0;
 }
@@ -246,12 +358,24 @@ h3{
 }
 
 
-/*Carousel elements styling ends here */
 
 .carousel_container{
     width: 87%;
     margin: 200px auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .carousel_container{
+        width: 100%;
+        margin: 70px auto;
+    }
+    .specoff_title{
+        font-size: 35px;
+    }
+}
+
+/*Carousel styling ends here */
+
 .didyouknow_container{
     background-color: white;
     text-align: center;
@@ -300,6 +424,27 @@ h3{
     height: 3vw;
     background-color: #384F5B;
 }
+
+@media only screen and (max-width: 768px){
+    .didyouknow{
+        font-size: 8vw;
+    }
+    .wedeliver{
+        font-size: 12vw;
+    }
+    
+    .ordernow_button{
+        width: 60vw;
+        height: 12vw;
+        border-radius: 15vw;
+        font-size: 7vw;
+        line-height: 12vw;
+    }
+    .flex_img{
+        max-width: 24vw;
+    }
+}
+
 
 /* FOOTER CODE STARTS HERE */ 
 footer{
@@ -356,14 +501,30 @@ input[type=email] {
 }
 
 @media only screen and (max-width: 768px) {
-    .carousel_container{
-        width: 100%;
-        margin: 70px auto;
+    footer{
+        flex-direction: column
     }
-    .specoff_title{
-        font-size: 35px;
+    .newsletter_container{
+        order: -1;
+    }
+    input[type=email] {
+        width: 60vw;
+        height: 30px;
+        font-size: 3.5vw;
+    }
+    .news_submit{
+        width: 15vw;
+        height: 30px;
+        font-size: 3.5vw;
+    }
+    .contactus_container{
+        text-align: center;
+    }
+    .address_container{
+        text-align: center;
     }
 }
+
 
 
 

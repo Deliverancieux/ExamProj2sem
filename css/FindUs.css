@@ -36,6 +36,7 @@ nav {
     padding-right: 5px;
     border-left: 2px solid transparent;
     border-right: 2px solid transparent;
+    background-color: white;
 }
 
 .nav_item_active {
@@ -52,93 +53,6 @@ nav {
     border-left: 2px solid #C89C7A;
     border-right: 2px solid #C89C7A;
     transition: .5s;
-}
-
-/* The main part starts */
-.login_container {
-    margin-top: 50px;
-}
-
-.login_image {
-    display: block;
-    margin: auto;
-    width: 5vw;
-}
-
-.login_title {
-    text-align: center;
-    font-size: 40px;
-    color: #DA945B;
-
-}
-
-.login_type {
-    background-color: #6593AE;
-    overflow: auto;
-    margin: auto;
-    width: 35vw;
-    padding: 25px 25px 35px 25px;
-    margin: 55px auto 35px auto;
-}
-
-.login_box {
-    color: #FFFFFF;
-    position: relative;
-    font-family: Raleway, sans-serif;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    font-weight: 300;
-}
-
-input[type=text] {
-    width: 100%;
-    padding: 0 0 12px 25px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 3px solid #FFFFFF;
-    font-family: Raleway, sans-serif;
-    color: white;
-    background-color: #6593AE;
-    outline: none;
-    font-size: 20px;
-
-}
-
-.SignUp_button {
-    color: white;
-    margin: 25px auto;
-    display: block;
-    width: 25vw;
-    height: 3vw;
-    background-color: #DA945B;
-    border-radius: 15px;
-    border: none;
-    font-family: Raleway, sans-serif;
-    font-size: 25px;
-    text-align: center;
-    line-height: 3vw;
-    margin-top: 60px;
-    font-weight: bold;
-
-}
-
-.SignUp_button:hover {
-    color: #6593AE;
-}
-
-.LogIn_button {
-    color: #DA945B;
-    font-size: 25px;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 40px;
-
-}
-
-.LogIn_button:hover {
-    color: #6593AE;
 }
 
 input {
@@ -211,4 +125,48 @@ input {
     display: block;
 }
 
+/* The main part starts */
+.findus_container {
+    margin-top: 50px;
+}
 
+.findus_container {
+    text-align: center;
+    font-size: 40px;
+    color: #6593AE;
+}
+
+.shops_title {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #F09346;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 60px;
+}
+.container {
+    position: relative;
+    padding: 0 18px;
+    max-width: 1280px;
+    margin-right: auto;
+    width: calc(50% - 48px);
+    float: left;
+    margin-left: 32px;
+}
+.shop {
+    background-color: #fff;
+    margin-bottom: 16px;
+    position: relative;
+    padding: 16px 16px 26px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 100px;
+}
+.shop_detail {
+    color: #7e898c;
+    font-family: Neris-Light,sans-serif;
+    font-weight: 400;
+}
