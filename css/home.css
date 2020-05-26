@@ -22,9 +22,8 @@ a{
 .logo{
     margin: 0 auto 50px auto;
     padding-top: 10px;
-    max-width: 40%;
+    height: 35px;
     display: block;
-    clear: both;
 }
 nav{
     height: 0;
@@ -36,7 +35,9 @@ nav{
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
+    
 }
+
 .overlay_content{
     position: relative;
     top: 15%;
@@ -45,6 +46,7 @@ nav{
     margin-top: 30px;
     margin: auto;
 }
+
 .openbtn{
     float: right;
     margin-right:20px;
@@ -54,7 +56,7 @@ nav{
     bottom: 70px;
 }
 .openbtn_img{
-    width: 30px;
+    height: 25px;
 }
 .closebtn {
     position: absolute;
@@ -70,21 +72,79 @@ nav{
     border-left: 2px solid transparent;
     border-right: 2px solid transparent;
     display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
-.nav_item_active{
-    color: #DA945B;
-    padding-left: 5px;
-    padding-right: 5px; 
+.active{
     border-left: 2px solid #C89C7A;
     border-right: 2px solid #C89C7A;
-    display: block;
+
 }
 .nav_item:hover{
     border-left: 2px solid #C89C7A;
     border-right: 2px solid #C89C7A;
     transition: .5s;
 }
-
+hr{
+    position: relative;
+    left: -25%;
+    width: 150%;
+    background-color: #DA945B;
+    height: 2px;
+}
+/*
+.circle{
+    background-color: #6593AE;
+    border-radius: 50%;
+    width: 80vw;
+    height: 80vw;
+    position: absolute;
+    left: -200%;
+}
+*/
+@media only screen and (min-width: 768px) {
+    .logo{
+        margin: 0;
+        max-width: 20%;
+        height: initial;
+        padding: 40px 0 0 5%;
+        position: relative;
+        z-index: 1;
+    }
+    .openbtn{
+        display: none;
+    }
+    .closebtn{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    nav{
+        height: initial;
+        width: initial;
+        position: initial;
+        float: right;
+        display: initial;
+        margin-top: -20px;
+        
+    }
+    .overlay_content{
+        text-align: center;
+        font-size: 20px;
+        padding: 0 5% 0 5%;
+        display: flex;
+        justify-content: flex-end;
+        width: initial;
+        height: initial;
+    }
+    .nav_item{
+        margin-left: 15px;
+        width: inherit;
+        display: inline-block;
+    }
+    
+}
 
 /*
 
