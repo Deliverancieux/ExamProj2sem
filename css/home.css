@@ -126,7 +126,7 @@ hr{
         position: initial;
         float: right;
         display: initial;
-        margin-top: -20px;
+        margin-top: -30px;
         
     }
     .overlay_content{
@@ -139,7 +139,7 @@ hr{
         height: initial;
     }
     .nav_item{
-        margin-left: 15px;
+        margin-left: 20px;
         width: inherit;
         display: inline-block;
     }
