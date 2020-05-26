@@ -15,7 +15,7 @@
     <script type="text/javascript" src="slick/slick.min.js" defer></script>
     <script type="text/javascript" src="js/carousel.js" defer></script>
     <script type="text/javascript" src="js/burgermenu.js" defer></script>
-    <script type="text/javascript" src="/js/cart.js" defer></script>
+    <script type="text/javascript" src="js/cart.js" defer></script>
 </head>
     
 <body>
@@ -48,20 +48,28 @@
             <hr>
             <a href="subpages/cart.html" class="nav_item">
                 <img src="files/cart.svg" alt="Cart">
+                <span>0</span>
             </a>
             <!--
             <div class="circle"></div>
             -->
         </div>
-            <span>0</span>
+
     </nav>
         <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><img src="files/burger_menu.svg" alt="Open buger menu" class="openbtn_img"></a>
     </header>
 	<main>
         <div class="sun_container">
-        <div class="sun"></div>
+            <img src="files/sun_bg.jpg" alt="Eurodeli Aarhus photo" class="sun_bg">
+            <article class="headline_container">
+            <h1 class="headline">Tastes like home</h1>
+            <p1 class="subheadline">EuroDeli imports your favourite products from your home. We are a supermarket chain across all Denmark, and we even deliver products to your home.</p1>
+            </article>
+        <div class="sun">
+            <a href="#specoff"><img src="files/arrow_down.svg" class="arrow_down"></a>
+            </div>
         </div>
-        <h1 class="specoff_title">SPECIAL OFFERS</h1>
+        <h1 class="specoff_title" id="specoff">SPECIAL OFFERS</h1>
         <div class="carousel_container">    
         <div class="carousel_slide_container">
             <div class="carousel_slide">

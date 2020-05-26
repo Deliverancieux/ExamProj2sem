@@ -120,7 +120,6 @@ ${item.inCart * item.price},00
 <div class="basketTotalContainer">
 <h4 class="basketTotalTitle">Total:&nbsp</h4>
 <h4 class="basketTotal">${cartCost},00</h4>
-<a class="checkout" href="#">Checkout</a>
 </div>
 `
     }
