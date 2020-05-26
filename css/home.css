@@ -73,7 +73,7 @@ nav{
     font-size: 50px;
     color: white;
 }
-/*Carousel elements styling starts here */
+/*Carousel styling starts here */
 .carousel_slide_container{
     margin: 5px 0 5px 0;
 }
@@ -245,12 +245,24 @@ h3{
 }
 
 
-/*Carousel elements styling ends here */
 
 .carousel_container{
     width: 87%;
     margin: 200px auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .carousel_container{
+        width: 100%;
+        margin: 70px auto;
+    }
+    .specoff_title{
+        font-size: 35px;
+    }
+}
+
+/*Carousel styling ends here */
+
 .didyouknow_container{
     background-color: white;
     text-align: center;
@@ -299,6 +311,27 @@ h3{
     height: 3vw;
     background-color: #384F5B;
 }
+
+@media only screen and (max-width: 768px){
+    .didyouknow{
+        font-size: 8vw;
+    }
+    .wedeliver{
+        font-size: 12vw;
+    }
+    
+    .ordernow_button{
+        width: 60vw;
+        height: 12vw;
+        border-radius: 15vw;
+        font-size: 7vw;
+        line-height: 12vw;
+    }
+    .flex_img{
+        max-width: 24vw;
+    }
+}
+
 
 /* FOOTER CODE STARTS HERE */ 
 footer{
@@ -355,14 +388,30 @@ input[type=email] {
 }
 
 @media only screen and (max-width: 768px) {
-    .carousel_container{
-        width: 100%;
-        margin: 70px auto;
+    footer{
+        flex-direction: column
     }
-    .specoff_title{
-        font-size: 35px;
+    .newsletter_container{
+        order: -1;
+    }
+    input[type=email] {
+        width: 60vw;
+        height: 30px;
+        font-size: 3.5vw;
+    }
+    .news_submit{
+        width: 15vw;
+        height: 30px;
+        font-size: 3.5vw;
+    }
+    .contactus_container{
+        text-align: center;
+    }
+    .address_container{
+        text-align: center;
     }
 }
+
 
 
 
