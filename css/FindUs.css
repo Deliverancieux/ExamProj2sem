@@ -6,6 +6,7 @@
     border: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Raleway, sans-serif;
 }
@@ -35,6 +36,7 @@ nav {
     padding-right: 5px;
     border-left: 2px solid transparent;
     border-right: 2px solid transparent;
+    background-color: white;
 }
 
 .nav_item_active {
@@ -52,6 +54,7 @@ nav {
     border-right: 2px solid #C89C7A;
     transition: .5s;
 }
+
 input {
     width: 100%;
     padding: 0 0 12px 25px;
@@ -120,4 +123,28 @@ input {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* The main part starts */
+.findus_container {
+    margin-top: 50px;
+}
+
+.findus_container {
+    text-align: center;
+    font-size: 40px;
+    color: #6593AE;
+}
+
+.shops_title {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #F09346;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 60px;
+    
 }
