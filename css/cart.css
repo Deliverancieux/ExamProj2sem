@@ -1,0 +1,135 @@
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon{
+    font-size: 25px;
+    color: #6593AE;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+    color: #DA945B;
+    justify-content: space-around;
+    border-bottom: 2px solid #6593AE;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #DA945B;
+    border-bottom: 2px solid #6593AE;
+}
+
+.quantity {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    color: #DA945B;
+    justify-content: space-around;
+    border-bottom: 2px solid #6593AE;
+}
+
+.total {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    color: #DA945B;
+    justify-content: space-around;
+    border-bottom: 2px solid #6593AE;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    color: #DA945B;
+    border-bottom: 2px solid #6593AE;
+}
+
+.product ion-icon{
+    cursor: pointer;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    padding: 10px 0;
+    margin-right: 0;
+}
+
+.basketTotalTitle {
+    width: 20%;
+    color: #DA945B;
+}
+
+.basketTotal {
+    width: 10%;
+    color: #DA945B;
+}
+
+body{
+    font-family: Raleway, sans-serif;
+    background-color:  white;
+}
+
+.checkout{
+    position: absolute;
+    text-align: center;
+    width: 10%;
+    border: solid 3px #DA945B;
+    border-radius: 15px;
+    height: 40px;
+    line-height: 34px;
+    font-size: 1vw;
+    color: inherit;
+    margin-top: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+    .products-container {
+    width: 90%;
+    justify-content: center;
+    font-size: 90%;
+    }
+    
+    
+}
