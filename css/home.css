@@ -18,7 +18,77 @@ header{
 a{
     text-decoration: none;
 }
+/* header styling starts here */
+.logo{
+    margin: 0 auto 50px auto;
+    padding-top: 10px;
+    max-width: 40%;
+    display: block;
+    clear: both;
+}
+nav{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay_content{
+    position: relative;
+    top: 15%;
+    width: 30%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+.openbtn{
+    float: right;
+    margin-right:20px;
+    color: #C89C7A;
+    height: 30px;
+    position: relative;
+    bottom: 70px;
+}
+.openbtn_img{
+    width: 30px;
+}
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #C89C7A;
+}
+.nav_item{
+    color: #DA945B;
+    padding-left: 5px;
+    padding-right: 5px; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    display: block;
+}
+.nav_item_active{
+    color: #DA945B;
+    padding-left: 5px;
+    padding-right: 5px; 
+    border-left: 2px solid #C89C7A;
+    border-right: 2px solid #C89C7A;
+    display: block;
+}
+.nav_item:hover{
+    border-left: 2px solid #C89C7A;
+    border-right: 2px solid #C89C7A;
+    transition: .5s;
+}
 
+
+/*
+
+ --- old desktop first settings ---
 .logo{
     margin-top: 40px;
     max-width: 20%;
@@ -32,27 +102,9 @@ nav{
     font-size: 20px;
     padding: 0 5% 0 5%;
 }
-.nav_item{
-    margin-left: 1.5%;
-    color: #DA945B;
-    padding-left: 5px;
-    padding-right: 5px; 
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-}
-.nav_item_active{
-    margin-left: 1.5%;
-    color: #DA945B;
-    padding-left: 5px;
-    padding-right: 5px; 
-    border-left: 2px solid #C89C7A;
-    border-right: 2px solid #C89C7A;
-}
-.nav_item:hover{
-    border-left: 2px solid #C89C7A;
-    border-right: 2px solid #C89C7A;
-    transition: .5s;
-}
+*/
+
+/* header styling ends here */
 .sun_container{
     background-color: white;
     height: 42vw;
