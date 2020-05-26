@@ -137,7 +137,7 @@ h3{
 
 @media (-webkit-device-pixel-ratio: 1) {
 .carousel_slide{
-    width: 300px;
+    width: 280px;
     height: 420px;
 }
 .product_image{
@@ -251,10 +251,116 @@ h3{
     width: 87%;
     margin: 200px auto;
 }
+.didyouknow_container{
+    background-color: white;
+    text-align: center;
+}
+.didyouknow{
+    font-weight: normal;
+    font-size: 4vw;
+    color: #6593AE;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.wedeliver{
+    font-size: 6vw;
+    color: #C9A78C;
+    margin-bottom: 40px;
+}
+.ordernow_button{
+    width: 20vw;
+    height: 3vw;
+    margin: auto;
+    text-align: center;
+    background-color: #C9A78C;
+    color: white;
+    border-radius: 3vw;
+    font-size: 2vw;
+    font-weight: bold;
+    display: block;
+    line-height: 3vw;
+}
+.flex_img_container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.eurodeli{
+    align-self: flex-end;
+    margin-left: 3vw;
+}
+.truck{
+    align-self: flex-end;
+}
+.home{
+    margin-right: 3vw;
+}
+.road{
+    height: 3vw;
+    background-color: #384F5B;
+}
+
+/* FOOTER CODE STARTS HERE */ 
+footer{
+    background-color: #3D5867;
+    display: flex;
+    justify-content: space-around;
+}
+.newsletter_container{
+    text-align: center;
+    color: white;
+    clear: both;
+}
+.sub2news{
+    clear: both;
+    padding-top: 20px;
+}
+input[type=email] {
+    width: 25vw;
+    height: 2vw;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+    font-family: Raleway, sans-serif;
+    display: inline-block;
+    font-size: 1vw;
+}
+.news_submit{
+    width: 4vw;
+    height: 2vw;
+    display: inline-block;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: Raleway, sans-serif;
+    background-color: white;
+    font-size: 1vw;
+    margin-top: 20px;
+}
+.contactus_container{
+    margin-top: 20px;
+    color: white;
+    line-height: 40px;
+}
+.address_container{
+    color: white;
+    text-align: right;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.address_title{
+    font-size: 22px;
+}
+.contactus_title{
+    font-size: 22px;
+}
+
 @media only screen and (max-width: 768px) {
     .carousel_container{
         width: 100%;
-        margin: 100px auto;
+        margin: 70px auto;
+    }
+    .specoff_title{
+        font-size: 35px;
     }
 }
 
