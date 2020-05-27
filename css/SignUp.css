@@ -210,5 +210,84 @@ input {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* FOOTER STARTS HERE */ 
+footer{
+    background-color: #3D5867;
+    display: flex;
+    justify-content: space-around;
+}
+.newsletter_container{
+    text-align: center;
+    color: white;
+    clear: both;
+}
+.sub2news{
+    clear: both;
+    padding-top: 20px;
+}
+input[type=email] {
+    width: 25vw;
+    height: 2vw;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+    font-family: Raleway, sans-serif;
+    display: inline-block;
+    font-size: 1vw;
+    border: 0 solid transparent;
+}
+.news_submit{
+    width: 4vw;
+    height: 2vw;
+    display: inline-block;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: Raleway, sans-serif;
+    background-color: white;
+    font-size: 1vw;
+    margin-top: 20px;
+    border: 0 solid transparent;
+}
+.contactus_container{
+    margin-top: 20px;
+    color: white;
+    line-height: 40px;
+}
+.address_container{
+    color: white;
+    text-align: right;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.address_title{
+    font-size: 22px;
+}
+.contactus_title{
+    font-size: 22px;
+}
 
+@media only screen and (max-width: 768px) {
+    footer{
+        flex-direction: column;
+    }
+    .newsletter_container{
+        order: -1;
+    }
+    input[type=email] {
+        width: 60vw;
+        height: 30px;
+        font-size: 3.5vw;
+    }
+    .news_submit{
+        width: 15vw;
+        height: 30px;
+        font-size: 3.5vw;
+    }
+    .contactus_container{
+        text-align: center;
+    }
+    .address_container{
+        text-align: center;
+    }
+}
 
