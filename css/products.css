@@ -231,9 +231,21 @@ nav{
     .sun_container{
         margin-top: -50px;
     }
+    .search_container{
+        margin-top: 80px;
+    }
+    .searchbar{
+        width: 70vw;
+        font-size: 12px;
+    }
+    .search_icon{
+        width: 15vw;
+    }
+    .specoff_title{
+        padding: 15px;
+    }
     
 }
-
 
 
 /*Carousel styling starts here */
@@ -426,10 +438,13 @@ h3{
 @media only screen and (max-width: 768px) {
     .carousel_container{
         width: 100%;
-        margin: 70px auto;
+        margin: 10px auto;
     }
     .specoff_title{
         font-size: 35px;
+    }
+    .carousel_bg{
+        margin-top: 0;
     }
 }
 
@@ -527,6 +542,143 @@ h3{
 }
 
 
+
+
+.products_container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.products_container .carousel_slide{
+    margin: 20px;
+    display: inline-block;
+}
+.seemore_button{
+    margin: auto;
+    display: block;
+    padding: 25px;
+}
+@media only screen and (max-width: 768px){
+    .products_container .carousel_slide{
+        margin: 10px;
+        display: inline-block;
+    }
+    .dropdown_container{
+        flex-direction: column;
+        text-align: center;
+        height: 200px;
+        width: 160px;
+    }
+}
+.wish_desc{
+    text-align: center;
+    width: 60vw;
+    margin: auto;
+    display: block;
+    position: relative;
+    bottom: 30px;
+    font-size: 20px;
+}
+
+.wish_container{
+    margin: auto;
+    width: 90vw;
+    height: 45vw;
+    border-top-left-radius: 45vw;
+    border-top-right-radius: 45vw;
+    background-color: #DA945B;
+    text-align: center;
+    padding-top: 6vw;
+}
+.wish_text{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact_input_box{
+    display: block;
+    margin: 1vw auto 4vw auto;
+    width: 30vw;
+    height: 3vw;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 5px;
+    color: #6593AE;
+}
+.wish_input_box{
+    display: block;
+    margin: 1vw auto 4vw auto;
+    width: 50vw;
+    height: 8vw;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 5px;
+    color: #6593AE;
+    font-family: Raleway, sans-serif;
+}
+.submit_container{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+}
+.addphoto{
+    max-height: 4vw;
+}
+.wish_submit{
+    width: 200px;
+    height: 4vw;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    color: #6593AE;
+    border-radius: 2vw;
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: 4vw;
+}
+@media only screen and (max-width:1200px){
+    .wish_container{
+        padding-top: 2vw;
+    }
+}
+@media only screen and (max-width:768px){
+    .wish_container{
+        height: 90vw;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        padding-top: 10vw;
+    }
+    .wish_desc{
+        font-size: 15px;
+    }
+    .wish_text{
+        font-size: 15px;
+    }
+    .contact_input_box{
+        width: 55vw;
+        height: 7vw;
+        font-size: 15px;
+    }
+    .wish_input_box{
+        font-size: 15px;
+        width: 65vw;
+        height: 15vw;
+    }
+    .submit_container{
+        width: 55vw;
+    }
+    .wish_submit{
+        width: 35vw;
+        height: 7vw;
+        line-height: 7vw;
+        font-size: 20px;
+    }
+    .addphoto{
+        max-height: 12vw;
+    }
+}
 
 /* FOOTER CODE STARTS HERE */ 
 footer{
