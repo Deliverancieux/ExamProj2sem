@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EuroDeli</title>
+    <meta name="description" content="EuroDeli, a shop of imported European products.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/faq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Using the 'defer' attribute for best loading performance, and to be able to include the script tags in <head> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js" defer></script>
+    <script type="text/javascript" src="../slick/slick.min.js" defer></script>
+    <script type="text/javascript" src="../js/carousel_products.js" defer></script>
+    <script type="text/javascript" src="../js/burgermenu.js" defer></script>
+    <script type="text/javascript" src="../js/cart.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../files/logo.png" alt="EuroDeli logo" class="logo">
+        </a>
+        <nav id="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay_content">
+                <a href="../index.html" class="nav_item"> Home
+                </a>
+                <hr>
+                <a href="../subpages/products.html" class="nav_item"> Products
+                </a>
+                <hr>
+                <a href="../subpages/findus.html" class="nav_item"> Find&nbsp;Us
+                </a>
+                <hr>
+                <a href="../subpages/faq.html" class="nav_item active"> FAQ
+                </a>
+                <hr>
+                <a href="../subpages/favourites.html" class="nav_item">
+                    <img src="../files/favourites.svg" alt="Favourites">
+                </a>
+                <hr>
+                <a href="../subpages/SignIn.html" class="nav_item">
+                    <img src="../files/profile.svg" alt="Profile">
+                </a>
+                <hr>
+                <a href="../subpages/cart.html" class="nav_item">
+                    <img src="../files/cart.svg" alt="Cart">
+                    <span>0</span>
+                </a>
+                <!--
+            <div class="circle"></div>
+            -->
+            </div>
+
+        </nav>
+        <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><img src="../files/burger_menu.svg" alt="Open buger menu" class="openbtn_img"></a>
+    </header>
+    <script>
+        $(function() {
+            $("#accordion").accordion({
+                heightStyle: "content",
+                collapsible: true,
+            });
+        });
+
+    </script>
+    <h1>FAQ</h1>
+    <div id="accordion">
+        <h3>How does the delivery work?</h3>
+        <div>
+            <p>It’s simple- you just need to log in or sign up for our website on the right corner of the screen, going to the profile page. After that, please add your address and add a delivery method.Then you choose what you would like to be delivered to you from our goods. And at the end you will be able to choose where you would like your order to be delivered.<br><br>
+Delivery usually takes 2-5 days, depending on the product status in the store. The delivery price depends on the distance from our standard routes:</p>
+            <ul>
+                <li>0-10km - 0 kr</li>
+                <li>11-20km - 50 kr</li>
+                <li>21-40km - 100 kr</li>
+                <li>41-60km - 150 kr</li>
+                <li>over 61km call +4531514024 to know the price.</li>
+            </ul>
+            <br>
+            <p1>
+Orders over 1500kr will receive major discount on the delivery cost.
+</p>
+        </div>
+        <h3>Can I pick up my order myself?</h3>
+        <div>
+            <p>SYes, when you will go to the checkout you just need select delivery adress and click on “collect” and choose the store, where you would like to collect your order. It’s absolutely free. </p>
+        </div>
+        <h3>Can I choose EuroDeli as parcel pick up shop?</h3>
+        <div>
+            <p>Yes. We are working with Dao, Bring, Post Nord, GLS and wish. At Eurodeli you can pick up your parcel or send it. </p>
+        </div>
+        <h3>How can I send my parcel through Eurodeli?</h3>
+        <div>
+            <p>You need to contact the company that receives your package.</p>
+        </div>
+        <h3>When do you usually get new deliveries and how can I get notified when you do?
+</h3>
+        
+        <div>
+            <p>We get new deliveries every Monday and Wednesday. To get notified you can sign up for our newslettr at the bottom of our site or in your Profile. Also you can follow our facebook page to be aware of our new deliveries and much more. 
+</p>
+        </div>
+        <h3>From which countries do you have products in the store?</h3>
+        <div>
+            <p>We have products from Bulgaria, Russia, Latvia, Lithuania, Poland, Romania, Hungary, Ukraine Czech Republic and West Balkans. Hovewer, we are going to expand the range of products from other countries.</p>
+        </div>
+        <h3>I couldn’t find the product/country I wanted. What can I do?
+</h3>
+        <div>
+            <p>You can fill in the<a href="products.html#wish"> wish list form </a>and tell us about the product/country you wish for. We will reply as soon as possible and try to solve the problem. 
+ </p>
+        </div>
+        <h3>How does the discount card work?
+</h3>
+        <div>
+            <p>When you create a profile on the website, you can collect a bonus for each of your order. You need to spend at least <span>150kr</span> to get a bonus. When you collect all 5 of them, you get a special discount code <span>(7% off) </span>which you can use on your next delivery.  </p>
+        </div>
+        <h3>How can I send money through RIA?
+</h3>
+        <div>
+            <p>To send money through RIA you need to come to our store and ask for a worker, who will be able to help you with that. The worker will create an account for you and send your money. 
+</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="contactus_container">
+            <h1 class="contactus_title">CONTACT US</h1>
+            <p1 class="contactus_content">
+                +45 31 51 40 24
+                <br>
+                bgshopdk@gmail.com
+            </p1>
+
+
+        </div>
+        <div class="newsletter_container">
+            <h2 class="sub2news">Subscribe to our newsletter!</h2>
+            <input type="email" placeholder="E-mail address" name="mail" required>
+            <button type="button" class="news_submit">Submit</button>
+        </div>
+        <div class="address_container">
+            <h1 class="address_title">ADDRESS</h1>
+            <p1 class="address_content">
+                Åboulevard 32 sttv - 2200
+                <br>
+                Copenhagen
+                <br>
+                TERMS AND CONDITIONS</p1>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -234,18 +234,31 @@ nav{
         font-size: 3vw;
     }
     .headline{
+        margin-top: 100px;
         font-size: 6vw;
     }
     .sun{
         margin-top: 0;
     }
     .sun_bg{
-        top: 8%;
+        top: 13vw;
     }
     .sun_container{
         margin-top: -50px;
     }
     
+}
+@media only screen and (max-width:500px) {
+    .headline{
+        display: none;
+    }
+    .subheadline{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .sun_bg{
+        top: 8%;
+    }
 }
 
 
