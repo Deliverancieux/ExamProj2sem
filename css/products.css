@@ -571,6 +571,11 @@ h3{
         width: 160px;
     }
 }
+@media only screen and (max-width: 500px){
+    .products_container .carousel_slide{
+        width: 160px;
+    }
+}
 .wish_desc{
     text-align: center;
     width: 60vw;
