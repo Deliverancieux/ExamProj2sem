@@ -240,6 +240,7 @@ nav{
 .carousel_container{
     width: 87%;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 
@@ -434,8 +435,12 @@ h3{
 /*Carousel styling ends here */
 
 
-
-
+.products_title{
+    text-align: center;
+    font-size: 50px;
+    color: #6593AE;
+    padding: 50px;
+}
 
 
 
