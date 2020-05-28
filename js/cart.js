@@ -2,23 +2,133 @@ let carts = document.querySelectorAll('.add-cart');
 
 let products = [
     {
-        name: 'Product1',
-        tag: 'product1',
+        name: 'SELGA wafers',
+        tag: '01',
+        price: 9,
+        inCart: 0
+    },
+    {
+        name: 'Jaunpils curd 9%',
+        tag: '02',
+        price: 20,
+        inCart: 0
+    },
+    {
+        name: 'Smoked&nbsp;cheese&nbsp;sausage',
+        tag: '03',
+        price: 30,
+        inCart: 0
+    },
+        {
+        name: 'Medalus&nbsp;Original&nbsp;beer',
+        tag: '04',
+        price: 40,
+        inCart: 0
+    },
+        {
+        name: 'Sweet&nbsp;curd&nbsp;cheese&nbsp;with&nbsp;caramel',
+        tag: '05',
+        price: 7,
+        inCart: 0
+    },
+        {
+        name: 'RIGA&nbsp;BLACK&nbsp;BALSAM&nbsp;blackcurrant',
+        tag: '06',
+        price: 250,
+        inCart: 0
+    },
+        {
+        name: 'TIGERS&nbsp;Cooked&nbsp;sausage&nbsp;for&nbsp;kids',
+        tag: '07',
+        price: 30,
+        inCart: 0
+    },
+        {
+        name: 'Jubilejas&nbsp;Sausage',
+        tag: '08',
+        price: 35,
+        inCart: 0
+    },
+        {
+        name: 'Asorti&nbsp;sweets',
+        tag: '09',
+        price: 50,
+        inCart: 0
+    },
+        {
+        name: 'VIČI&nbsp;Crispy&nbsp;fish',
+        tag: '10',
+        price: 25,
+        inCart: 0
+    },
+        {
+        name: 'RIGAS&nbsp;BRUT&nbsp;Sparkling&nbsp;wine',
+        tag: '11',
+        price: 59,
+        inCart: 0
+    },
+        {
+        name: 'Cabanos&nbsp;sausages',
+        tag: '12',
+        price: 25,
+        inCart: 0
+    },
+        {
+        name: 'Valmiermuižas&nbsp;dark&nbsp;beer',
+        tag: '13',
+        price: 70,
+        inCart: 0
+    },
+        {
+        name: 'Yzwiecka&nbsp;turkey&nbsp;meat',
+        tag: '14',
+        price: 17,
+        inCart: 0
+    },
+        {
+        name: 'Mici&nbsp;extra',
+        tag: '15',
+        price: 9,
+        inCart: 0
+    },
+        {
+        name: 'Egri&nbsp;bikavér',
+        tag: '16',
         price: 167,
         inCart: 0
     },
-    {
-        name: 'Product2',
-        tag: 'product2',
-        price: 220,
+        {
+        name: 'Egri&nbsp;bikavér&nbsp;dry&nbsp;wine',
+        tag: '17',
+        price: 60,
         inCart: 0
     },
+        {
+        name: 'Иван&nbsp;cheese',
+        tag: '18',
+        price: 125,
+        inCart: 0
+    },
+        {
+        name: 'Gyulai&nbsp;tradidional&nbsp;sausage',
+        tag: '19',
+        price: 125,
+        inCart: 0
+    },
+        {
+        name: 'KĀRUMS&nbsp;sweet&nbsp;chocolate&nbsp;curd&nbsp;cheese',
+        tag: '20',
+        price: 9,
+        inCart: 0
+    },
+    
     {
-        name: 'Product3',
-        tag: 'product3',
-        price: 200,
+        name: 'Cozomac&nbsp;sweet&nbsp;pastry',
+        tag: '21',
+        price: 30,
         inCart: 0
     }
+    
 
 ];
 
@@ -102,7 +212,7 @@ function displayCart() {
             productContainer.innerHTML += `
                 <div class="product">
                     <ion-icon name="close-circle-outline"></ion-icon>
-                    <img src="https://via.placeholder.com/150x200">
+                    <img src="../files/products/${item.tag}.png">
                     <span>${item.name}</span>
                 </div>
                 <div class="price">${item.price},00</div>
