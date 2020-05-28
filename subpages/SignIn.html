@@ -43,6 +43,9 @@
                     <img src="../files/favourites.svg" alt="Favourites">
                 </a>
                 <hr>
+                <!--
+            Drop down Profile menu when the user is not logged in
+            -->
                 <div class="header_dropdown">
                 <a href="SignIn.html"> <img src="../files/profile.svg" class="nav_item active" id="profile" alt="drop"></a>
                 <div class="header_dropdown_content">
@@ -78,6 +81,9 @@
             <input type="password" id="password-input" name="password">
             <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
         </div>
+        <!--
+            Show and Hide password Javascript using png
+            -->
         <script>
             function show_hide_password(target) {
                 var input = document.getElementById('password-input');

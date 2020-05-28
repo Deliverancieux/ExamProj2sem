@@ -89,6 +89,7 @@ hr{
     background-color: #DA945B;
     height: 2px;
 }
+/* Header drop down Profile menu */
 .header_dropdown {
     position: relative;
     display: inline-block;

@@ -142,16 +142,6 @@ hr {
     border-bottom-width: thin;
 }
 
-/*
-.circle{
-    background-color: #6593AE;
-    border-radius: 50%;
-    width: 80vw;
-    height: 80vw;
-    position: absolute;
-    left: -200%;
-}
-*/
 @media only screen and (min-width: 768px) {
     .logo {
         margin: 0;
@@ -358,7 +348,4 @@ input[type=email] {
 
     }
 
-    .findus_container {
-    
-    }
 }
