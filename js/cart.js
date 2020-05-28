@@ -1,3 +1,4 @@
+//The code below is taken from a YouTube tutorial//
 let carts = document.querySelectorAll('.add-cart');
 
 let products = [

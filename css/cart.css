@@ -208,6 +208,8 @@ nav{
 
 /* header styling ends here */
 
+/*The code below is taken from a YouTube tutorial*/
+
 .products-container {
     display: flex;
     justify-content: center;
@@ -314,6 +316,8 @@ nav{
     width: 10%;
     color: #DA945B;
 }
+
+/*The code above is taken from a YouTube tutorial*/
 
 body{
     font-family: Raleway, sans-serif;
