@@ -340,6 +340,19 @@ nav{
     right: 10%;
     bottom: 33%;
 }
+.price_box{
+    background-color: #6593AE;
+    width: 70px;
+    height: 90px;
+    float: right;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    right: 10%;
+    bottom: 33%;
+}
 p2{
     font-size: 24px;
 }
