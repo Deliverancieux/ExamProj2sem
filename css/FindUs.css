@@ -219,25 +219,6 @@ nav{
     margin-bottom: 90PX;
 
 }
-.shop {
-    background-color: #fff;
-    margin-bottom: 16px;
-    position: relative;
-    padding: 16px 16px 26px;
-    font-size: 18px;
-    line-height: 24px;
-    
-}
-
-.map_link {
-    font-size: 18px;
-    color: #6593AE;
-    font-weight: 600;
-}
-.list_shops {
-    border-width: thick;
-    border: 2px solid #EA934A;
-}
 
 /* MAPBOX */ 
 .w-full {
