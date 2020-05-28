@@ -318,9 +318,11 @@ nav{
     height: 350px;
     position: relative;
 }
-h3{
+.carousel_slide h3{
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .heart{
