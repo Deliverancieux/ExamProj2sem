@@ -227,9 +227,6 @@ nav{
     color: #6593AE;
     font-weight: bold;
 }
-.searchbar:placeholder{
-    color: #6593AE;
-}
 .search_icon{
     border: 4px solid #6593AE;
     height: 40px;
