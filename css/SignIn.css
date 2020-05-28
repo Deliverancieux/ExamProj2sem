@@ -297,7 +297,7 @@ input[type=text] {
 .SignUp_button:hover {
     color: #6593AE;
 }
-
+/* Show/Hide passwoed styling */
 
 input[type="text"], input[type="password"] {
     width: 100%;
@@ -313,9 +313,6 @@ input[type="text"], input[type="password"] {
     font-size: 20px;
 }
 
-.checkbox {
-    color: white;
-}
 .welcome {
     color: #DA945B;
     font-size: 19px;
@@ -328,7 +325,7 @@ input[type="text"], input[type="password"] {
     border-bottom-width: thin;
 }
 
-
+/* Show/Hide passwoed styling (the image)*/
 
 .password {
 	position: relative;
