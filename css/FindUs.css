@@ -213,33 +213,10 @@ nav{
 /* The main part starts */
 .findus_container {
     margin-top: 50px;
-}
-
-.findus_container {
     text-align: center;
     font-size: 40px;
     color: #6593AE;
-}
 
-.shops_title {
-    font-family: Raleway, sans-serif;
-    font-weight: 400;
-    margin-bottom: 12px;
-    text-align: center;
-    color: #F09346;
-    font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 12px;
-    margin-top: 60px;
-}
-.container {
-    position: relative;
-    padding: 0 18px;
-    max-width: 1280px;
-    margin-right: auto;
-    width: calc(50% - 48px);
-    float: left;
-    margin-left: 32px;
 }
 .shop {
     background-color: #fff;
@@ -250,11 +227,18 @@ nav{
     line-height: 24px;
     margin-top: 100px;
 }
-.shop_detail {
-    color: #7e898c;
-    font-family: Neris-Light,sans-serif;
-    font-weight: 400;
+
+.map_link {
+    font-size: 18px;
+    color: #6593AE;
+    font-weight: 600;
 }
+.list_shops {
+    border-width: thick;
+    border-color: aqua;
+    border: 2px solid #F00;
+}
+
 /* MAPBOX */ 
 .w-full {
     width: 628px;
