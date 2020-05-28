@@ -6,23 +6,28 @@
     border: 0;
     box-sizing: border-box;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: Raleway, sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /* header styling starts here */
-.logo{
+.logo {
     margin: 0 auto 50px auto;
     padding-top: 10px;
     height: 35px;
     display: block;
 }
-nav{
+
+nav {
     height: 0;
     width: 100%;
     position: fixed;
@@ -32,10 +37,10 @@ nav{
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
-    
+
 }
 
-.overlay_content{
+.overlay_content {
     position: relative;
     top: 15%;
     width: 30%;
@@ -44,17 +49,19 @@ nav{
     margin: auto;
 }
 
-.openbtn{
+.openbtn {
     float: right;
-    margin-right:20px;
+    margin-right: 20px;
     color: #C89C7A;
     height: 30px;
     position: relative;
     bottom: 70px;
 }
-.openbtn_img{
+
+.openbtn_img {
     height: 25px;
 }
+
 .closebtn {
     position: absolute;
     top: 20px;
@@ -62,33 +69,38 @@ nav{
     font-size: 60px;
     color: #C89C7A;
 }
-.nav_item{
+
+.nav_item {
     color: #DA945B;
     padding-left: 5px;
-    padding-right: 5px; 
+    padding-right: 5px;
     border-left: 2px solid transparent;
     border-right: 2px solid transparent;
     display: block;
     margin-bottom: 15px;
     margin-top: 15px;
 }
-.active{
+
+.active {
     border-left: 2px solid #C89C7A;
     border-right: 2px solid #C89C7A;
 
 }
-.nav_item:hover{
+
+.nav_item:hover {
     border-left: 2px solid #C89C7A;
     border-right: 2px solid #C89C7A;
     transition: .5s;
 }
-hr{
+
+hr {
     position: relative;
     left: -25%;
     width: 150%;
     background-color: #DA945B;
     height: 2px;
 }
+
 .header_dropdown {
     position: relative;
     display: inline-block;
@@ -129,6 +141,7 @@ hr{
     border-bottom-color: #6593AE;
     border-bottom-width: thin;
 }
+
 /*
 .circle{
     background-color: #6593AE;
@@ -140,7 +153,7 @@ hr{
 }
 */
 @media only screen and (min-width: 768px) {
-    .logo{
+    .logo {
         margin: 0;
         max-width: 20%;
         height: initial;
@@ -148,16 +161,20 @@ hr{
         position: relative;
         z-index: 1;
     }
-    .openbtn{
+
+    .openbtn {
         display: none;
     }
-    .closebtn{
+
+    .closebtn {
         display: none;
     }
-    hr{
+
+    hr {
         display: none;
     }
-    nav{
+
+    nav {
         height: initial;
         width: initial;
         position: initial;
@@ -165,9 +182,10 @@ hr{
         display: initial;
         margin-top: -30px;
         overflow: visible;
-        
+
     }
-    .overlay_content{
+
+    .overlay_content {
         text-align: center;
         font-size: 20px;
         padding: 0 5% 0 5%;
@@ -176,16 +194,18 @@ hr{
         width: initial;
         height: initial;
     }
-    .nav_item{
+
+    .nav_item {
         margin-left: 20px;
         width: inherit;
         display: inline-block;
         white-space: nowrap;
     }
+
     .header_dropdown:hover .header_dropdown_content {
         display: block;
     }
-    
+
 }
 
 /*
@@ -221,36 +241,39 @@ nav{
 }
 
 
-/* MAPBOX */ 
+/* MAPBOX */
 .w-full {
-    width: 628px;
+    width: 1000px;
     height: 599px;
     border-radius: 15px;
     float: right;
-    
-}
-.map {
-    display: block;
-    margin-bottom: 700px;
-    margin-right: 50px;
+
 }
 
-/* FOOTER CODE STARTS HERE */ 
-footer{
+.map {
+    margin-bottom: 800px;
+    margin-right: 235px;
+}
+
+/* FOOTER CODE STARTS HERE */
+footer {
     margin-top: 100px;
     background-color: #3D5867;
     display: flex;
     justify-content: space-around;
 }
-.newsletter_container{
+
+.newsletter_container {
     text-align: center;
     color: white;
     clear: both;
 }
-.sub2news{
+
+.sub2news {
     clear: both;
     padding-top: 20px;
 }
+
 input[type=email] {
     width: 25vw;
     height: 2vw;
@@ -262,7 +285,8 @@ input[type=email] {
     font-size: 1vw;
     border: 0 solid transparent;
 }
-.news_submit{
+
+.news_submit {
     width: 4vw;
     height: 2vw;
     display: inline-block;
@@ -274,62 +298,67 @@ input[type=email] {
     margin-top: 20px;
     border: 0 solid transparent;
 }
-.contactus_container{
+
+.contactus_container {
     margin-top: 20px;
     color: white;
     line-height: 40px;
 }
-.address_container{
+
+.address_container {
     color: white;
     text-align: right;
     line-height: 40px;
     margin-top: 20px;
 }
-.address_title{
+
+.address_title {
     font-size: 22px;
 }
-.contactus_title{
+
+.contactus_title {
     font-size: 22px;
 }
 
 @media only screen and (max-width: 768px) {
-    footer{
+    footer {
         flex-direction: column
     }
-    .newsletter_container{
+
+    .newsletter_container {
         order: -1;
     }
+
     input[type=email] {
         width: 60vw;
         height: 30px;
         font-size: 3.5vw;
     }
-    .news_submit{
+
+    .news_submit {
         width: 15vw;
         height: 30px;
         font-size: 3.5vw;
     }
-    .contactus_container{
+
+    .contactus_container {
         text-align: center;
     }
-    .address_container{
+
+    .address_container {
         text-align: center;
+    }
+
+    .w-full {
+        width: 70vw;
+        height: 600px;
+        position: relative;
+        left: 50%;
+        margin-right: -20%;
+
+    }
+
+    .findus_container {
+    
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
