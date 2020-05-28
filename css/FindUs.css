@@ -255,14 +255,18 @@ nav{
     font-family: Neris-Light,sans-serif;
     font-weight: 400;
 }
+/* MAPBOX */ 
 .w-full {
     width: 628px;
     height: 599px;
     border-radius: 15px;
     float: right;
+    
 }
 .map {
     display: block;
+    margin-bottom: 700px;
+    margin-right: 50px;
 }
 
 /* FOOTER CODE STARTS HERE */ 
