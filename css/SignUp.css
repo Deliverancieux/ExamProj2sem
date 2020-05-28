@@ -14,23 +14,83 @@ body {
 a {
     text-decoration: none;
 }
-
-.logo {
-    margin-top: 40px;
-    max-width: 20%;
-    padding-left: 5%;
+/* header styling starts here */
+.logo{
+    margin: 0 auto 50px auto;
+    padding-top: 10px;
+    height: 35px;
+    display: block;
+}
+nav{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
 }
 
-nav {
-    margin-top: -20px;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 20px;
-    padding: 0 5% 0 5%;
+.overlay_content{
+    position: relative;
+    top: 15%;
+    width: 30%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
 }
 
-.nav_item {
-    margin-left: 1.5%;
+.openbtn{
+    float: right;
+    margin-right:20px;
+    color: #C89C7A;
+    height: 30px;
+    position: relative;
+    bottom: 70px;
+}
+.openbtn_img{
+    height: 25px;
+}
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #C89C7A;
+}
+.nav_item{
+    color: #DA945B;
+    padding-left: 5px;
+    padding-right: 5px; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.active{
+    border-left: 2px solid #C89C7A;
+    border-right: 2px solid #C89C7A;
+
+}
+.nav_item:hover{
+    border-left: 2px solid #C89C7A;
+    border-right: 2px solid #C89C7A;
+    transition: .5s;
+}
+hr{
+    position: relative;
+    left: -25%;
+    width: 150%;
+    background-color: #DA945B;
+    height: 2px;
+}
+.header_dropdown {
+    position: relative;
+    display: inline-block;
     color: #DA945B;
     padding-left: 5px;
     padding-right: 5px;
@@ -38,21 +98,116 @@ nav {
     border-right: 2px solid transparent;
 }
 
-.nav_item_active {
-    margin-left: 1.5%;
-    color: #DA945B;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-left: 2px solid #3D5867;
-    border-right: 2px solid #3D5867;
-    background-color: white;
+.header_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-.nav_item:hover {
-    border-left: 2px solid #C89C7A;
-    border-right: 2px solid #C89C7A;
-    transition: .5s;
+.header_dropdown_content a {
+    color: #DA945B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
+
+.header_dropdown_content a:hover {
+    background-color: #ddd;
+}
+
+.welcome {
+    color: #DA945B;
+    font-size: 19px;
+    padding-top: 10px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    border-bottom-color: #6593AE;
+    border-bottom-width: thin;
+}
+/*
+.circle{
+    background-color: #6593AE;
+    border-radius: 50%;
+    width: 80vw;
+    height: 80vw;
+    position: absolute;
+    left: -200%;
+}
+*/
+@media only screen and (min-width: 768px) {
+    .logo{
+        margin: 0;
+        max-width: 20%;
+        height: initial;
+        padding: 40px 0 0 5%;
+        position: relative;
+        z-index: 1;
+    }
+    .openbtn{
+        display: none;
+    }
+    .closebtn{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    nav{
+        height: initial;
+        width: initial;
+        position: initial;
+        float: right;
+        display: initial;
+        margin-top: -30px;
+        overflow: visible;
+        
+    }
+    .overlay_content{
+        text-align: center;
+        font-size: 20px;
+        padding: 0 5% 0 5%;
+        display: flex;
+        justify-content: flex-end;
+        width: initial;
+        height: initial;
+    }
+    .nav_item{
+        margin-left: 20px;
+        width: inherit;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    .header_dropdown:hover .header_dropdown_content {
+        display: block;
+    }
+    
+}
+
+/*
+
+ --- old desktop first settings ---
+.logo{
+    margin-top: 40px;
+    max-width: 20%;
+    padding-left: 5%;
+}
+
+nav{
+    margin-top: -20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    padding: 0 5% 0 5%;
+}
+*/
+
+/* header styling ends here */
+
+
 
 /* The main part starts */
 .login_container {
@@ -141,7 +296,7 @@ input[type=text] {
     color: #6593AE;
 }
 
-input {
+input[type="text"], input[type="password"], input[type="date"] {
     width: 100%;
     padding: 0 0 12px 25px;
     margin: 8px 0;
@@ -210,7 +365,7 @@ input {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/* FOOTER STARTS HERE */ 
+/* FOOTER CODE STARTS HERE */ 
 footer{
     background-color: #3D5867;
     display: flex;
@@ -268,7 +423,7 @@ input[type=email] {
 
 @media only screen and (max-width: 768px) {
     footer{
-        flex-direction: column;
+        flex-direction: column
     }
     .newsletter_container{
         order: -1;
@@ -290,4 +445,3 @@ input[type=email] {
         text-align: center;
     }
 }
-

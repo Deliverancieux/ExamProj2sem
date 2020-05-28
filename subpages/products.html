@@ -36,16 +36,23 @@
                 <a href="../subpages/findus.html" class="nav_item"> Find&nbsp;Us
                 </a>
                 <hr>
-                <a href="../subpages/faq.html" class="nav_item"> FAQ
+                <a href="../subpages/faq.html" class="nav_item "> FAQ
                 </a>
                 <hr>
                 <a href="../subpages/favourites.html" class="nav_item">
                     <img src="../files/favourites.svg" alt="Favourites">
                 </a>
                 <hr>
-                <a href="../subpages/SignIn.html" class="nav_item">
-                    <img src="../files/profile.svg" alt="Profile">
-                </a>
+                <div class="header_dropdown">
+                <a href="SignIn.html"> <img src="../files/profile.svg" class="nav_item" id="profile" alt="drop"></a>
+                <div class="header_dropdown_content">
+                    <h1 class="welcome">Hi, Zsofi!</h1>
+                    <a href="profile.html">My Account</a>
+                    <a href="../subpages/myorders.html">My Orders</a>
+                    <a href="../subpages/discount.html">My Discount card</a>
+                    <a href="../subpages/SignIn.html" style="color:#6593AE; font-weight:500; text-align: center;">Sign Out</a>
+                </div>
+            </div>
                 <hr>
                 <a href="../subpages/cart.html" class="nav_item">
                     <img src="../files/cart.svg" alt="Cart">
@@ -59,7 +66,6 @@
         </nav>
         <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><img src="../files/burger_menu.svg" alt="Open buger menu" class="openbtn_img"></a>
     </header>
-
     <main>
         <div class="search_container">
             <input type="search" placeholder="SEARCH FOR PRODUCTS OR COUNTRY..." name="searchbar" class="searchbar">
@@ -256,15 +262,15 @@
                 <div class="dropdown countries">
                     <button class="dropdown_button">COUNTRIES<img src="../files/arrow_down.svg" alt="open menu" class="open_img"></button>
                     <div class="countries_content">
-                        <a href="#products_container" class="dropdown_option">Bulgaria</a>
-                        <a href="#products_container" class="dropdown_option">Russia</a>
-                        <a href="#products_container" class="dropdown_option">Lithuania</a>
-                        <a href="#products_container" class="dropdown_option">Latvia</a>
-                        <a href="#products_container" class="dropdown_option">Romania</a>
-                        <a href="#products_container" class="dropdown_option">Hungary</a>
-                        <a href="#products_container" class="dropdown_option">Poland</a>
-                        <a href="#products_container" class="dropdown_option">Ukraine</a>
                         <a href="#products_container" class="dropdown_option">Czech Republic</a>
+                        <a href="#products_container" class="dropdown_option">Bulgaria</a>
+                        <a href="#products_container" class="dropdown_option">Hungary</a>
+                        <a href="#products_container" class="dropdown_option">Latvia</a>
+                        <a href="#products_container" class="dropdown_option">Lithuania</a>
+                        <a href="#products_container" class="dropdown_option">Poland</a>
+                        <a href="#products_container" class="dropdown_option">Romania</a>
+                        <a href="#products_container" class="dropdown_option">Russia</a>
+                        <a href="#products_container" class="dropdown_option">Ukraine</a>
                         <a href="#products_container" class="dropdown_option">West Balkans</a>
                     </div>
                 </div>

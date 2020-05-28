@@ -6,20 +6,16 @@
     border: 0;
     box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body{
     font-family: Raleway, sans-serif;
 }
-header{
-    background-color: white;
-}
-
 a{
     text-decoration: none;
 }
-
 /* header styling starts here */
-
 .logo{
     margin: 0 auto 50px auto;
     padding-top: 10px;
@@ -93,6 +89,46 @@ hr{
     background-color: #DA945B;
     height: 2px;
 }
+.header_dropdown {
+    position: relative;
+    display: inline-block;
+    color: #DA945B;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.header_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.header_dropdown_content a {
+    color: #DA945B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header_dropdown_content a:hover {
+    background-color: #ddd;
+}
+
+.welcome {
+    color: #DA945B;
+    font-size: 19px;
+    padding-top: 10px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    border-bottom-color: #6593AE;
+    border-bottom-width: thin;
+}
 /*
 .circle{
     background-color: #6593AE;
@@ -128,6 +164,7 @@ hr{
         float: right;
         display: initial;
         margin-top: -30px;
+        overflow: visible;
         
     }
     .overlay_content{
@@ -144,6 +181,9 @@ hr{
         width: inherit;
         display: inline-block;
         white-space: nowrap;
+    }
+    .header_dropdown:hover .header_dropdown_content {
+        display: block;
     }
     
 }
@@ -292,6 +332,7 @@ body{
     font-weight: bold;
     display: block;
     line-height: 3vw;
+    margin-bottom: 200px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -321,11 +362,9 @@ body{
 
 
 
+
 /* FOOTER CODE STARTS HERE */ 
 footer{
-    /* this margin top is unique to this site, don't copy it anywhere else thankyou */
-    margin-top: 100px;
-    /* yes that one above */
     background-color: #3D5867;
     display: flex;
     justify-content: space-around;
