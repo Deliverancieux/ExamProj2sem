@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Find Us</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .marker {
+            background-image: url('../files/location_icon.png');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .mapboxgl-popup {
+            max-width: 200px;
+            
+        }
+
+        .mapboxgl-popup-content {
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            color: #3D5867;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id='map'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibmluYXN0YXJvdm9pdG92YTIwIiwiYSI6ImNrN2RhMGVhNzB5MDkzbXJ3ODl6a3JydXAifQ.PQtIurMgjcLtk_7IAqfYCg';
+
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/ninastarovoitova20/ckak1q5lb2fn01iqtusppnyg7/draft',
+                center: [10.322, 55.958],
+                zoom: 7
+                
+            });
+
+            var geojson = {
+                type: 'FeatureCollection',
+                features: [{
+                        type: 'Feature',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [12.554876, 55.684616]
+                        },
+                        properties: {
+                            title: 'EuroDeli Copenhagen',
+                            description: 'Åboulevard 32 st.tv - 2200 Copenhagen N'
+                        }
+                    },
+                    {
+                        type: 'Feature',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [12.421452, 55.622235]
+                        },
+                        properties: {
+                            title: 'EuroDeli Brøndby',
+                            description: 'Brøndby Strand Centrum 41 - 2660 Brøndby Strand'
+                        }
+                    },
+                    {
+                        type: 'Feature',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [10.113334, 56.175249]
+                        },
+                        properties: {
+                            title: 'EuroDeli Aarhus',
+                            description: 'Venøvej 3 - 8381 Tilst, Aarhus',
+
+                        }
+                    },
+                    {
+                        type: 'Feature',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [10.33341, 55.39398]
+                        },
+                        properties: {
+                            title: 'EuroDeli Odense',
+                            description: 'Juelsmindevej 11 - 5200 Odense V'
+                        }
+                    },
+
+                    {
+                        type: 'Feature',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [9.157833, 56.126348]
+                        },
+                        properties: {
+                            title: 'EuroDeli Ikast',
+                            description: 'Grundtvigsvej 90 - 7430 Ikast'
+                        }
+                    }
+                ]
+            };
+            // add markers to map
+            geojson.features.forEach(function(marker) {
+
+                // create a HTML element for each feature
+                var el = document.createElement('div');
+                el.className = 'marker';
+
+                // make a marker for each feature and add to the map
+                new mapboxgl.Marker(el)
+                    .setLngLat(marker.geometry.coordinates)
+                    .setPopup(new mapboxgl.Popup({
+                            offset: 25
+                        }) // add popups
+                        .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+                    .addTo(map);
+            });
+            // Add zoom and rotation controls to the map.
+            map.addControl(new mapboxgl.NavigationControl());
+
+
+        </script>
+
+</body>
+
+</html>

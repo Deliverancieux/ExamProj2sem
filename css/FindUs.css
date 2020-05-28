@@ -255,7 +255,15 @@ nav{
     font-family: Neris-Light,sans-serif;
     font-weight: 400;
 }
-
+.w-full {
+    width: 628px;
+    height: 599px;
+    border-radius: 15px;
+    float: right;
+}
+.map {
+    display: block;
+}
 
 /* FOOTER CODE STARTS HERE */ 
 footer{
@@ -337,3 +345,20 @@ input[type=email] {
         text-align: center;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
