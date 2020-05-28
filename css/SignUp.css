@@ -365,6 +365,23 @@ input[type="text"], input[type="password"], input[type="date"] {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+@media only screen and (max-width:768px) {
+    .login_image{
+        width: 12vw;
+    }
+    .login_type{
+        width: 85vw;
+    }
+    .SignUp_button{
+        width: 70vw;
+        height: 8vw;
+        line-height: 8vw;
+    }
+}
+
+
+
 /* FOOTER CODE STARTS HERE */ 
 footer{
     background-color: #3D5867;

@@ -213,7 +213,7 @@ nav{
 
 /* The main part starts */
 .login_container {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .login_image {
@@ -343,6 +343,21 @@ input[type="text"], input[type="password"] {
 .password-control.view {
 	background: url(https://snipp.ru/demo/495/no-view.svg);
 }
+
+@media only screen and (max-width:768px) {
+    .login_image{
+        width: 12vw;
+    }
+    .login_type{
+        width: 85vw;
+    }
+    .LogIn_button{
+        width: 70vw;
+        height: 8vw;
+        line-height: 8vw;
+    }
+}
+
 
 /* FOOTER CODE STARTS HERE */ 
 footer{
