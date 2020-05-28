@@ -263,10 +263,12 @@ nav{
 }
 .map {
     display: block;
+    margin: auto;
 }
 
 /* FOOTER CODE STARTS HERE */ 
 footer{
+    margin-top: 100px;
     background-color: #3D5867;
     display: flex;
     justify-content: space-around;
