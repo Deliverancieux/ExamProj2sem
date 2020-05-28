@@ -69,7 +69,8 @@
                         },
                         properties: {
                             title: 'EuroDeli Copenhagen',
-                            description: 'Åboulevard 32 st.tv - 2200 Copenhagen N'
+                            description:'<strong>Åboulevard 32 st.tv - 2200 Copenhagen N</strong><br><a href="https://www.facebook.com/BulgarskMad/?fref=ts" target="_blank" title="Facebook"style="color:#DA945B">Facebook</a></br> <br>+45 91 69 94 28</br><br> aaboulevard@eurodeli.dk</br><br> 10:00 - 20:00 (Fri - Sat 10:00 - 20:30)</br>',
+                       
                         }
                     },
                     {
@@ -80,7 +81,7 @@
                         },
                         properties: {
                             title: 'EuroDeli Brøndby',
-                            description: 'Brøndby Strand Centrum 41 - 2660 Brøndby Strand'
+                            description: '<strong>Brøndby Strand Centrum 41 - 2660 Brøndby Strand</strong><br><a href="https://www.facebook.com/profile.php?id=100010418114978&fref=ts" target="_blank" title="Facebook"style="color:#DA945B">Facebook</a></br> <br>+45 53 38 87 91</br><br> taastrup@eurodeli.dk</br><br> 10:00 - 20:00 (Fri - 10:00 - 20:30)(Sat - 9:00 - 20:30) (Sun - 10:00 - 20:00)</br>',
                         }
                     },
                     {
@@ -91,7 +92,7 @@
                         },
                         properties: {
                             title: 'EuroDeli Aarhus',
-                            description: 'Venøvej 3 - 8381 Tilst, Aarhus',
+                            description: '<strong>Venøvej 3 - 8381 Tilst, Aarhus</strong><br><a href="https://www.facebook.com/EuroDeliAarhus" target="_blank" title="Facebook"style="color:#DA945B">Facebook</a></br> <br>+45 31 89 25 39</br><br> aarhus@eurodeli.dk</br><br> 10:00 - 19:30 (Fri - Sat 10:00 - 20:00) (Sun 10:00 - 19.00)</br>',
 
                         }
                     },
@@ -103,7 +104,7 @@
                         },
                         properties: {
                             title: 'EuroDeli Odense',
-                            description: 'Juelsmindevej 11 - 5200 Odense V'
+                            description: '<strong>Juelsmindevej 11 - 5200 Odense V</strong><br><a href="https://www.facebook.com/EuroDeliOdense/?fref=ts" target="_blank" title="Facebook"style="color:#DA945B">Facebook</a></br> <br>+45 53 38 84 32</br><br> odense@eurodeli.dk</br><br> 10:00 - 19:00 (Fri - Sat 10:00 - 19:30) (Sun 10:00 - 18:30)</br>'
                         }
                     },
 
@@ -115,7 +116,7 @@
                         },
                         properties: {
                             title: 'EuroDeli Ikast',
-                            description: 'Grundtvigsvej 90 - 7430 Ikast'
+                            description: '<strong>Grundtvigsvej 90 - 7430 Ikast</strong><br><a href="https://www.facebook.com/EuroDeliIkast/" target="_blank" title="Facebook" style="color:#DA945B">Facebook</a></br> <br>+45 53 38 84 67</br><br> ikast@eurodeli.dk</br><br> 10:30-18:30 (Fri - Sat 10:00 - 19:00) (Sun 10:00 - 18:30)</br>'
                         }
                     }
                 ]
@@ -133,7 +134,7 @@
                     .setPopup(new mapboxgl.Popup({
                             offset: 25
                         }) // add popups
-                        .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+                        .setHTML('<h3>' + marker.properties.title + '</h3><br>' + marker.properties.description + '</p>'))
                     .addTo(map);
             });
             // Add zoom and rotation controls to the map.
