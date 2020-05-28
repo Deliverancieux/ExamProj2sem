@@ -216,6 +216,7 @@ nav{
     text-align: center;
     font-size: 40px;
     color: #6593AE;
+    margin-bottom: 90PX;
 
 }
 .shop {
@@ -225,7 +226,7 @@ nav{
     padding: 16px 16px 26px;
     font-size: 18px;
     line-height: 24px;
-    margin-top: 100px;
+    
 }
 
 .map_link {
@@ -235,8 +236,7 @@ nav{
 }
 .list_shops {
     border-width: thick;
-    border-color: aqua;
-    border: 2px solid #F00;
+    border: 2px solid #EA934A;
 }
 
 /* MAPBOX */ 
