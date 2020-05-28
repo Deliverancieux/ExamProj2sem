@@ -318,6 +318,10 @@ nav{
     height: 350px;
     position: relative;
 }
+h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .heart{
     float: right;
