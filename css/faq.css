@@ -247,7 +247,7 @@ a{
     color: #6593AE;
     font-weight: bold;
 }
-a:hover{
+#accordion a:hover{
     color: #3D5867; 
 }
 span{
