@@ -250,7 +250,7 @@ a{
 #accordion a:hover{
     color: #3D5867; 
 }
-span{
+#accordion span{
     font-weight: bold;
 }
 
